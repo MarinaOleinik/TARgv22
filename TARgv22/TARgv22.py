@@ -2,6 +2,21 @@
 from math import *
 
 #print("Tere tulemast!!!") #kommenteerime
+arv=input("Arv")
+try:
+    arv=int(arv)
+    print("Int")  
+except:
+    try:
+        arv=float(arv)
+        print("Float")
+    except:
+        print("tekst")
+    
+
+
+
+
 
 v=input("Kas tahad dekodeerida?")
 if v.upper()=="JAH":
