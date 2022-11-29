@@ -1,4 +1,8 @@
 from math import *
+
+
+
+
 j=0
 for i in range(0,15,1): # for i in range(15):
     A=float(input(f"{i+1} Sisesta A  : ")) #A=5.0 int(A)==A =True
