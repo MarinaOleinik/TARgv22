@@ -1,8 +1,5 @@
 from math import *
-
-
-
-
+#Korduslaused
 j=0
 for i in range(0,15,1): # for i in range(15):
     A=float(input(f"{i+1} Sisesta A  : ")) #A=5.0 int(A)==A =True
@@ -23,21 +20,6 @@ while i<15:
     A=float(input(f"{i} Sisesta A  : "))
     if int(A)==A: j+=1
 print(j)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 print("Tere! Olen sinu uus sõber - Python!")
@@ -72,15 +54,6 @@ else:
 
 
 
-
-
-
-
-
-
-
-
-
 #print("Tere tulemast!!!") #kommenteerime
 
 arv=input("Arv")
@@ -95,11 +68,8 @@ except:
         print("Float")
     except:
         print("Tekst")
-    
 
-
-
-
+#If kasutamine
 
 v=input("Kas tahad dekodeerida?")
 if v.upper()=="JAH":
@@ -112,10 +82,6 @@ if v.upper()=="JAH":
     print(f"{n} - {paev}")
 else:
     print("Head aega")
-
-
-
-
 
 a,b,g=input("Sisesta nurgade suuruseid ").split()
 a=int(a)
@@ -134,12 +100,7 @@ if a>0 and b>0 and g>0:
 else:
     tuup="on vaja >0 "
 print(tuup)
-
-
-
-
-
-
+#Tekstilised funktsioonid ja sissend, väljund 
 vastus=input() #jah, Jah,JAH
 print(vastus.upper()) #JAH, lower():jah
 if vastus.upper()=="JAH":
@@ -160,14 +121,6 @@ elif arv.isdigit():
         print(f"{arv} - ei sobi negatiivne arv")
 else:
     print(f"{arv} - segatud tekst ja numbrid")
-
-
-
-
-
-
-
-
 
 hinne=int(input("Mis hinne sa sai täna?"))
 if hinne>=1 and hinne<=5:
