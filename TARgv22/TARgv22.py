@@ -1,5 +1,60 @@
+
+
 from math import *
+from random import *
 #Korduslaused
+r=0
+c=0
+while r<10:
+    r+=1
+    while c<10:
+        c+=1
+        print(str(r*c).center(4), end="")
+    c=0
+    print()#\n
+
+for r in range(1,11):
+    for c in range(1,11):
+        print(str(r*c).center(4), end="")
+    print()
+
+print()
+
+text=""
+for i in range(1,11):
+    arv1=randint(-100,100)
+    arv2=randint(-100,100)
+    if arv1>arv2:
+        print(f"{arv1} on suurem kui {arv2}")
+        text+=" "+str(arv1)
+    elif arv2>arv1:
+        print(f"{arv2} on suurem kui {arv1}")
+        text+=" "+str(arv2)
+    else:
+        print(f"{arv1},{arv2} on võrdsed")
+print(text)
+
+
+
+
+N=int(input("Kogus:"))
+m=int(input("Min:"))
+m*=60
+summa=0
+for i in range(1,N):
+    summa+=m
+    m+=10
+print("Kokku nad töötavad:",summa/60,"min")
+
+for r in range(9):#r=0,1,2,3,4,5,6,7,8
+    for c in range(9):
+        if r==c:
+            print(r+1, end=" ")
+        else:
+            print(0,end=" ")
+    print()# строка закончилась
+print()
+
 j=0
 for i in range(0,15,1): # for i in range(15):
     A=float(input(f"{i+1} Sisesta A  : ")) #A=5.0 int(A)==A =True
