@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9141f1a6-10c7-48b6-b207-e112a70e3b6d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TARgv22.py</StartupFile>
+    <StartupFile>mat_controll.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="mat_controll.py" />
     <Compile Include="TARgv22.py" />
+    <Compile Include="Vigad_2.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
