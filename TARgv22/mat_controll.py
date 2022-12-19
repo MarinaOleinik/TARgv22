@@ -41,6 +41,7 @@ if tase==1:
         vastus=int(input())
         if vastus==vas: 
             oige+=1
+
         else:
             print("Õige vastus on",eval(str(arv1)+mark+str(arv2)))       
 elif tase==2:
