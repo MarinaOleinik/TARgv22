@@ -27,13 +27,15 @@ def Haigla(ik3:int):
         haigla="Kuresaare"
     elif ik3>10 and ik3<=19:
         haigla="Tartu"
+    elif ik3>190 and ik3<=225:
+        haigla="Haigla"
     # jne
     return haigla
 def Sugu(ik1:int)->str:
     """
 
     """
-    if ik1%2:
+    if ik1%2==0:
         sugu="naine"
     else:
         sugu="mees"
