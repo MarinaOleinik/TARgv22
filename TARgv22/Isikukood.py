@@ -21,8 +21,9 @@ while True:
                         ik3=int(ik[7:10])
                         haigla=Haigla(ik3)
                         print(haigla)
-                        sugu=Sugu(int(ik_list[0]))
-                        print(sugu)
+                        
+                        s=Sugu(int(ik_list[0]))
+                        print(s)
                     else:
                         print(vastus) #
 

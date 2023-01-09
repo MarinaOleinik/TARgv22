@@ -2,7 +2,7 @@
 def Kontroll(isikukood:str):
     """Isikukoodi kontroll number
     On vaja isikukood sisestada
-    :param str ik: Inimese isikukood
+    :param str isikukood: Inimese isikukood
     :rtype: var Märamata tüüp
     """
     ik_list=list(isikukood)
@@ -36,7 +36,7 @@ def Sugu(ik1:int)->str:
 
     """
     if ik1%2==0:
-        sugu="naine"
+        a="naine"
     else:
-        sugu="mees"
-    return sugu
+        a="mees"
+    return a
