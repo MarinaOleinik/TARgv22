@@ -1,5 +1,20 @@
 from math import *
-from re import A
+from random import choice
+from re import T
+
+import string
+
+def salasona(k: int):
+    sala=""
+    for i in range(k):
+        t=choice(string.ascii_letters) #Aa...Zz
+        num=choice([1,2,3,4,5,6,7,8,9,0])
+        t_num=[t,str(num)]
+        sala+=choice(t_num)
+    return sala
+
+
+
 def arithmetic(a1:float,sym:str,a2:float)->any:
     """Lihtne kalkulaator
     +  liitmine, - lahutamine, * korrutamine,/ jagamine
@@ -41,6 +56,7 @@ def square(a: float):
         else:
             v="---"
             return v
+
     except:
         v="---"
         return v

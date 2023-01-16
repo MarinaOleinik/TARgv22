@@ -1,5 +1,7 @@
+from operator import xor
 from Funktionid import *
-
+sala=salasona(10)
+print(sala)
 #3
 for i in range(3):
     P,S,d=square(input())
