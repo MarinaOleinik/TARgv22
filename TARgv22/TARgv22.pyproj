@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9141f1a6-10c7-48b6-b207-e112a70e3b6d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Põhi_fail.py</StartupFile>
+    <StartupFile>Palgad.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -26,9 +26,14 @@
     <Compile Include="List_funktion.py" />
     <Compile Include="mat_controll.py" />
     <Compile Include="Oma_moodul.py" />
+    <Compile Include="Palgad.py" />
     <Compile Include="Põhi_fail.py" />
     <Compile Include="TARgv22.py" />
     <Compile Include="Vigad_2.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Nimede_file.txt" />
+    <Content Include="Palgade_file.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
