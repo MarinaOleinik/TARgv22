@@ -54,8 +54,31 @@ def maksimaalne_palk(p:list,i:list):
         print(f"{nimi}")
         pos=ind+1
 
-
-
+def sorteerimine(p:list, inimesed:list,a:int): #0 kasvab ,1 kahaneb
+    N=len(p)
+    p=list(map(int,p))
+    if a==0:
+        for i in range(0,N-1):
+            for j in range(i+1,N):
+                if p[i]<p[j]:
+                    abi=p[i]
+                    p[i]=p[j]
+                    p[j]=abi
+                    abi=inimesed[i]
+                    inimesed[i]=inimesed[j]
+                    inimesed[j]=abi
+    else:
+        for i in range(0,N-1):
+            for j in range(i+1,N):
+                if p[i]>p[j]:
+                    abi=p[i]
+                    p[i]=p[j]
+                    p[j]=abi
+                    abi=inimesed[i]
+                    inimesed[i]=inimesed[j]
+                    inimesed[j]=abi
+    return p,inimesed
+        
 
 
 

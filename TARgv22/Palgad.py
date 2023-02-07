@@ -27,3 +27,7 @@ while True:
         print(inimesed)
     elif v==4:
         maksimaalne_palk(palgad,inimesed)
+    elif v==5:
+        palgad,inimesed=sorteerimine(palgad,inimesed,0)
+        for i in range(len(palgad)):
+            print(f"{palgad[i]} - {inimesed[i]}")
